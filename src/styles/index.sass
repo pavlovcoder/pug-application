@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300')
+
+$unit1-back: #990000
+$unit2-back: #ff9966
+$unit1-color: #ffffff
+$vitamin-max: rgba(200, 0, 0, 0.5)
+
+html, body
+  font-family: 'Sunflower', sans-serif
+  font-size: 25px
+  
+.unit-1
+  font-size: 25px
+  padding: 20px 40px
+  margin: 30px
+
+  &::before
+    content: attr(data-source)
+
+  &[data-type='news']
+    background-color: $unit1-back
+    color: $unit1-color
+
+.unit-2
+  padding: 20px 40px
+  margin: 30px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  flex-wrap: wrap
+
+  h3
+    font-size: 25px
+    font-weight: 300
+
+  .vitamins
+    width: 100%
+    height: 20%
+
+    img
+      float: left
+      width: 16.66%
+      height: 100%
+      cursor: pointer
+      transition: all .5s ease-out
+
+      &:hover
+        transform: scale(1.4)
+
+  &[data-type='icons']
+    background-color: $unit2-back
+    color: $unit1-color

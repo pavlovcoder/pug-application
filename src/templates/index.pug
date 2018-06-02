@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet', type='text/css', href='../styles/index.css')
+    title Pug Application
+  body
+    main
+      article(class='unit-1', data-type='news', data-source='Britanica Open Sources', data-pages='234', data-authors='O.Stewart, M.Marcinski, K.Gordelyanov')
+      article(class='unit-2', data-type='icons', data-authors='Wlodzimierz Pavlov')
+        h3 Click to the selected vegetables or fruits for increasing your vitamin set :)
+        div(class='vitamins', data-vitamins-scores='0')
+          img(src='https://image.flaticon.com/icons/svg/765/765554.svg', alt='tomato', title='tomato', data-vitamins-score='5.267')
+          img(src='https://image.flaticon.com/icons/svg/765/765553.svg', alt='orange', title='orange', data-vitamins-score='7.642')
+          img(src='https://image.flaticon.com/icons/svg/765/765544.svg', alt='cabbage', title='cabbage', data-vitamins-score='25.356')
+          img(src='https://image.flaticon.com/icons/svg/765/765560.svg', alt='grapes', title='grapes', data-vitamins-score='20.946')
+          img(src='https://image.flaticon.com/icons/svg/765/765546.svg', alt='grenade', title='grenade', data-vitamins-score='10.532')
+          img(src='https://image.flaticon.com/icons/svg/765/765540.svg', alt='lime', title='lime', data-vitamins-score='24.634')
+    script(type='text/javascript', src='../js/index.js')
